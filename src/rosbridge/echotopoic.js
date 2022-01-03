@@ -15,7 +15,6 @@ function EchoTopic() {
 
     const unsubscribe = () => {
         if (listener) {
-            console.log("Unsubscribing");
             listener.unsubscribe();
         }
     }
@@ -39,7 +38,6 @@ function EchoTopic() {
             }
         }
         if (listener) {
-            console.log("Subscribing to messages...");
             listener.subscribe(handleMsg);
         } else {
             console.log("Topic '" + topic + "' not found...make sure to input the full topic path - including the leading '/'");
@@ -49,6 +47,7 @@ function EchoTopic() {
     const handleMsg = (msg) => {
         setSomeImageURL("data:image/jpeg;base64," + msg.data)
     }
+    
     return (
         <div>
             <b>Topic to echo:  </b><input name="topicInput" defaultValue={topic} onChange={event => handleTopic(event.target.value)} />  <br />
