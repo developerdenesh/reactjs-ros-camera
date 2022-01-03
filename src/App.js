@@ -7,12 +7,12 @@ import { ROS } from 'react-ros'
 function App() {
   return (
     <div className="App">
-      <h1>Hello there</h1>
+      <h1>Robot's perspective</h1>
+      <Camera />
       <ROS>
         <ToggleConnect />
         <EchoTopic />
       </ROS>
-      <Camera />
     </div>
   );
 }

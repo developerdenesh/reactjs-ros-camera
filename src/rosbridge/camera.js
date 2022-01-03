@@ -3,7 +3,7 @@ import react, { useState } from 'react'
 function Camera () {
 
     return (
-        <h3>End of page</h3>
+        <p>Looking through the eyes of the robot</p>
     )
 }
 
