@@ -37,6 +37,7 @@
                     break;
                 }
             }
+
             if (listener) {
                 listener.subscribe(handleMsg);
             } else {
